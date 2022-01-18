@@ -53,9 +53,10 @@
 @media (max-width: 565px) {
     .container .add {
         height: 40px;
-        width: 75px;
-        font-size: 16px;
+        width: 80px;
+        font-size: 15px;
         margin-left: 0;
+        font-weight: 400;
     }
 }
 .container .add:hover {
@@ -111,11 +112,11 @@
 .tasks .task.ok::after {
     content: "";
     position: absolute;
-    width: 10px;
+    width: 12px;
     height: 2px;
     background-color: #4caf50;
     right: 233px;
-    margin-top: 10px;
+    margin-top: 9px;
     transform: rotate(60deg);
 }
 @media (max-width: 565px) {
@@ -124,6 +125,7 @@
     }
     .tasks .task.ok::after {
         right: 183px;
+        margin-top: 8px;
     }
 }
 .tasks .task .done {
