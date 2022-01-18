@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container .form {
+    background-color: #eee;
+    max-width: 100%;
+    padding: 30px;
+    margin: 25px;
+    text-align: center;
+    border-radius: 10px;
+}
+@media (max-width: 565px) {
+    .container .form {
+        padding: 15px;
+    }
+}
+.container .input {
+    float: left;
+    width: calc(100% - 120px);
+    height: 50px;
+    border-radius: 6px;
+    border: none;
+    background: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    color: #555;
+    padding: 5px;
+}
+@media (max-width: 565px) {
+    .container .input {
+        width: calc(100% - 85px);
+        height: 40px;
+        font-size: 20px;
+    }
+}
+.container .input:focus {
+    outline: none;
+}
+.container .add {
+    height: 50px;
+    width: 100px;
+    background-color: #d13125;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+@media (max-width: 565px) {
+    .container .add {
+        height: 40px;
+        width: 75px;
+        font-size: 16px;
+        margin-left: 0;
+    }
+}
+.container .add:hover {
+    background-color: #c32e23;
+}
+.tasks {
+    background-color: #eee;
+    max-width: 100%;
+    margin: 25px;
+    padding: 20px;
+    border-radius: 10px;
+}
+@media (max-width: 565px) {
+    .tasks {
+        padding: 15px;
+        margin-top: 0;
+    }
+}
+.tasks .task {
+    background-color: #fff;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    color: #444;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 6px;
+    margin: 15px;
+    opacity: 0.75;
+}
+@media (max-width: 565px) {
+    .tasks .task {
+        font-size: 14px;
+        margin: 0 0 5px;
+        font-weight: bold;
+        padding: 5px;
+    }
+}
+.tasks .task.ok {
+    opacity: 1;
+}
+.tasks .task.ok::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background-color: #4caf50;
+    right: 217px;
+    transform: rotate(-60deg);
+}
+.tasks .task.ok::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background-color: #4caf50;
+    right: 233px;
+    margin-top: 10px;
+    transform: rotate(60deg);
+}
+@media (max-width: 565px) {
+    .tasks .task.ok::before {
+        right: 167px;
+    }
+    .tasks .task.ok::after {
+        right: 183px;
+    }
+}
+.tasks .task .done {
+    background-color: #4caf50;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.5s;
+    position: absolute;
+    right: 160px;
+}
+@media (max-width: 565px) {
+    .tasks .task .done {
+        right: 120px;
+        padding: 5px;
+    }
+}
+.tasks .task .del {
+    background-color: #b8291f;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.5s;
+}
+@media (max-width: 565px) {
+    .tasks .task .del {
+        padding: 5px;
+    }
+}
+.tasks .del:hover {
+    background-color: #a1231a;
+}
